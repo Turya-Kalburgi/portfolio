@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turya Kalburgi — Full-Stack Developer & Engineer</title>
+  <meta name="description" content="Turya Kalburgi builds intelligent systems — voice AI, routing algorithms, and backends that think. Come along for the journey.">
+  <meta property="og:title" content="Turya Kalburgi — Full-Stack Developer & Engineer">
+  <meta property="og:description" content="Voice AI, routing algorithms, and intelligent backend systems. A portfolio told as a journey.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // set theme before paint to avoid flashing
+    document.documentElement.classList.add('js');
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="#top">Turya K.<span class="spark" aria-hidden="true">✦</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" data-accent="coral">About</a></li>
+        <li><a href="#projects" data-accent="teal">Projects</a></li>
+        <li><a href="#skills" data-accent="gold">Skills</a></li>
+        <li><a href="#contact" data-accent="pink">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.5"/>
+              <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5 5l1.6 1.6M17.4 17.4L19 19M19 5l-1.6 1.6M6.6 17.4L5 19"/>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ THE STARTING POINT ============ -->
+    <section class="hero wrap" aria-label="Introduction">
+      <div class="hero-doodles" aria-hidden="true">
+        <svg class="d1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C13 8 16 11 22 12 16 13 13 16 12 22 11 16 8 13 2 12 8 11 11 8 12 2Z"/></svg>
+        <svg class="d2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C13 8 16 11 22 12 16 13 13 16 12 22 11 16 8 13 2 12 8 11 11 8 12 2Z"/></svg>
+        <svg class="d3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C13 8 16 11 22 12 16 13 13 16 12 22 11 16 8 13 2 12 8 11 11 8 12 2Z"/></svg>
+      </div>
+
+      <span class="hero-badge reveal">Full-Stack Developer &amp; Engineer</span>
+      <h1 class="reveal">Hey, I'm
+        <span class="underlined">Turya.
+          <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M4 9.5C30 4 55 11 82 7.5S135 4.5 160 8.5 205 10.5 216 6"/>
+          </svg>
+        </span>
+      </h1>
+      <p class="hero-sub reveal">I build intelligent systems that solve real problems — voice AI that listens, routing algorithms that find the way, and backends that quietly keep everything running.</p>
+
+      <div class="hero-note reveal">
+        <span class="hand">Let me show you my story</span>
+        <svg viewBox="0 0 32 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 4C24 20 8 34 18 52"/>
+          <path d="M10 45l8 9 7-11"/>
+        </svg>
+      </div>
+      <div class="hero-cta reveal">
+        <a class="btn btn-coral" href="#about">Begin the journey</a>
+      </div>
+    </section>
+
+    <svg class="trail lean-right" viewBox="0 0 100 140" aria-hidden="true"><path d="M62 6C30 32 78 50 52 76 30 98 66 114 48 134"/></svg>
+
+    <!-- ============ CHAPTER 01 · ABOUT ============ -->
+    <section id="about" class="wrap chapter-coral">
+      <div class="station reveal">
+        <span class="station-marker" aria-hidden="true">01</span>
+        <span class="station-label hand">first station · about</span>
+      </div>
+      <h2 class="section-title reveal">The person behind the code
+        <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M4 9.5C30 4 55 11 82 7.5S135 4.5 160 8.5 205 10.5 216 6"/>
+        </svg>
+      </h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I'm a full-stack developer who gravitated toward the fun problems: <strong>voice AI</strong>, <strong>routing algorithms</strong>, and backend systems that actually think. Most of my time goes into turning messy, real-world situations into clean, working code.</p>
+          <p>I like building where software meets the real world — voices getting understood, routes getting shorter, a yoga school running itself while the teacher teaches. Complex under the hood, simple on the surface.</p>
+          <p>When I'm not shipping something, I'm usually down an algorithms rabbit hole or teaching myself whatever's next.</p>
+        </div>
+        <figure class="about-figure reveal">
+          <svg class="compass" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M100 14C148 10 188 52 186 100 184 150 146 188 98 186 50 184 12 146 14 98 16 52 54 18 100 14Z"/>
+            <path d="M100 24v10M176 100h-10M100 176v-10M24 100h10" stroke-width="2.5"/>
+            <path class="needle-n" d="M100 42 118 100H82Z" stroke-width="2.5"/>
+            <path class="needle-s" d="M82 100h36L100 158Z" stroke-width="2.5"/>
+            <circle cx="100" cy="100" r="6" fill="currentColor"/>
+          </svg>
+          <figcaption class="hand">always finding a heading</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <svg class="trail lean-left" viewBox="0 0 100 140" aria-hidden="true"><path d="M44 6C74 30 26 52 56 78 76 96 40 116 56 134"/></svg>
+
+    <!-- ============ CHAPTER 02 · PROJECTS ============ -->
+    <section id="projects" class="wrap chapter-teal">
+      <div class="station reveal">
+        <span class="station-marker" aria-hidden="true">02</span>
+        <span class="station-label hand">the expedition · projects</span>
+      </div>
+      <h2 class="section-title reveal">Camps along the way
+        <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M4 9.5C30 4 55 11 82 7.5S135 4.5 160 8.5 205 10.5 216 6"/>
+        </svg>
+      </h2>
+
+      <div class="expedition">
+        <article class="camp sketch reveal">
+          <svg class="tent" viewBox="0 0 28 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21 14 3l11 18Z"/><path d="M10.5 21 14 14l3.5 7"/>
+          </svg>
+          <div class="camp-head">
+            <span class="camp-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6c-5 0-8 3.5-8 9v7c0 5.5 3 9 8 9s8-3.5 8-9v-7c0-5.5-3-9-8-9Z"/>
+                <path d="M11 23c0 8 6 13 13 13s13-5 13-13M24 36v7M16 43h16"/>
+              </svg>
+            </span>
+            <div>
+              <span class="camp-eyebrow hand">camp 01</span>
+              <h3>SENTINEL</h3>
+            </div>
+          </div>
+          <p>A voice intelligence system that understands commands in real time — listening, parsing intent, and acting without missing a beat.</p>
+          <ul class="chips">
+            <li>Python</li><li>Voice AI</li><li>Real-time</li>
+          </ul>
+          <a class="camp-link" href="https://github.com/Turya-Kalburgi" target="_blank" rel="noopener">See it on GitHub <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="camp sketch reveal">
+          <svg class="tent" viewBox="0 0 28 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21 14 3l11 18Z"/><path d="M10.5 21 14 14l3.5 7"/>
+          </svg>
+          <div class="camp-head">
+            <span class="camp-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 41c9-13 13-3 19-14" stroke-dasharray="4.5 5"/>
+                <circle cx="7" cy="41" r="3" fill="currentColor" stroke="none"/>
+                <path d="M34 5c-4.4 0-8 3.4-8 7.8 0 5.4 8 13.2 8 13.2s8-7.8 8-13.2C42 8.4 38.4 5 34 5Z"/>
+                <circle cx="34" cy="13" r="2.6"/>
+              </svg>
+            </span>
+            <div>
+              <span class="camp-eyebrow hand">camp 02</span>
+              <h3>Navi-Raksha</h3>
+            </div>
+          </div>
+          <p>Smart routing and ETA calculation built on Dijkstra and A* — finding the fastest safe path through real road networks.</p>
+          <ul class="chips">
+            <li>Java</li><li>Dijkstra / A*</li><li>Graphs</li>
+          </ul>
+          <a class="camp-link" href="https://github.com/Turya-Kalburgi" target="_blank" rel="noopener">See it on GitHub <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="camp sketch reveal">
+          <svg class="tent" viewBox="0 0 28 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21 14 3l11 18Z"/><path d="M10.5 21 14 14l3.5 7"/>
+          </svg>
+          <div class="camp-head">
+            <span class="camp-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 8c-3.5 6-3.5 14 0 20 3.5-6 3.5-14 0-20Z"/>
+                <path d="M24 28c-2-6.5-8-10.5-14-10 1.5 6.5 7 11 14 10Z"/>
+                <path d="M24 28c2-6.5 8-10.5 14-10-1.5 6.5-7 11-14 10Z"/>
+                <path d="M10 34c3.5 5 24.5 5 28 0"/>
+              </svg>
+            </span>
+            <div>
+              <span class="camp-eyebrow hand">camp 03</span>
+              <h3>Swar Yoga AI</h3>
+            </div>
+          </div>
+          <p>A digital platform for a yoga school — QR attendance, payments, and class management, all in one calm place.</p>
+          <ul class="chips">
+            <li>Node.js</li><li>MongoDB</li><li>JavaScript</li>
+          </ul>
+          <a class="camp-link" href="https://github.com/Turya-Kalburgi" target="_blank" rel="noopener">See it on GitHub <span class="arrow" aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <svg class="trail lean-right" viewBox="0 0 100 140" aria-hidden="true"><path d="M58 6C32 28 74 46 50 72 32 92 62 112 46 134"/></svg>
+
+    <!-- ============ CHAPTER 03 · SKILLS ============ -->
+    <section id="skills" class="wrap chapter-gold">
+      <div class="station reveal">
+        <span class="station-marker" aria-hidden="true">03</span>
+        <span class="station-label hand">tools in the backpack · skills</span>
+      </div>
+      <h2 class="section-title reveal">What I carry with me
+        <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M4 9.5C30 4 55 11 82 7.5S135 4.5 160 8.5 205 10.5 216 6"/>
+        </svg>
+      </h2>
+
+      <div class="packs">
+        <div class="pack sketch reveal">
+          <span class="hand">speaks fluently</span>
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li><span class="dot" aria-hidden="true"></span>Java</li>
+            <li><span class="dot" aria-hidden="true"></span>Python</li>
+            <li><span class="dot" aria-hidden="true"></span>JavaScript</li>
+          </ul>
+        </div>
+        <div class="pack sketch reveal">
+          <span class="hand">builds with</span>
+          <h3>Backend</h3>
+          <ul class="chips">
+            <li><span class="dot" aria-hidden="true"></span>Node.js</li>
+            <li><span class="dot" aria-hidden="true"></span>FastAPI</li>
+            <li><span class="dot" aria-hidden="true"></span>MongoDB</li>
+          </ul>
+        </div>
+        <div class="pack sketch reveal">
+          <span class="hand">geeks out on</span>
+          <h3>Specialties</h3>
+          <ul class="chips">
+            <li><span class="dot" aria-hidden="true"></span>Algorithms</li>
+            <li><span class="dot" aria-hidden="true"></span>Data Structures</li>
+            <li><span class="dot" aria-hidden="true"></span>Voice AI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <svg class="trail lean-left" viewBox="0 0 100 140" aria-hidden="true"><path d="M46 6C72 32 28 50 54 76 74 96 42 114 56 134"/></svg>
+
+    <!-- ============ CHAPTER 04 · CONTACT ============ -->
+    <section id="contact" class="wrap arrival chapter-pink">
+      <div class="arrival-card sketch reveal">
+        <span class="hand">you made it — final stop</span>
+        <h2>Let's build something together</h2>
+        <p>Got an idea, a problem worth solving, or just want to talk shop? My inbox is always open.</p>
+        <div class="arrival-actions">
+          <a class="btn btn-pink" href="mailto:swarsakshi9@gmail.com">Say hello ✉</a>
+          <a class="btn btn-teal" href="https://github.com/Turya-Kalburgi" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span class="hand">built by hand, no templates harmed</span><br>
+    © <span id="year">2026</span> Turya Kalburgi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
