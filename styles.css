@@ -454,8 +454,8 @@ section { padding: 4.5rem 0; }
   box-shadow: 5px 5px 0 var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.camp:nth-child(odd)  { transform: rotate(-0.8deg); }
-.camp:nth-child(even) { margin-left: auto; transform: rotate(0.7deg); }
+.camp:nth-of-type(odd)  { transform: rotate(-0.8deg); }
+.camp:nth-of-type(even) { margin-left: auto; transform: rotate(0.7deg); }
 .camp:hover {
   transform: rotate(0deg) translateY(-5px);
   box-shadow: 8px 9px 0 var(--shadow);
@@ -485,8 +485,20 @@ section { padding: 4.5rem 0; }
   padding: 0.15rem;
   border-radius: 50%;
 }
-.camp:nth-child(odd)  .tent { right: -4.15rem; }
-.camp:nth-child(even) .tent { left: -4.15rem; }
+.camp:nth-of-type(odd)  .tent { right: -4.15rem; }
+.camp:nth-of-type(even) .tent { left: -4.15rem; }
+
+/* handwritten waypoint between the solo and team legs of the trail */
+.camp-divider {
+  align-self: center;
+  position: relative;
+  z-index: 1;
+  background: var(--bg);
+  padding: 0.2rem 1.2rem;
+  color: var(--teal-deep);
+  font-size: 1.55rem;
+  transform: rotate(-2deg);
+}
 
 .camp-head {
   display: flex;
@@ -661,9 +673,9 @@ section { padding: 4.5rem 0; }
   transform: translateY(0);
 }
 /* keep the hand-placed tilts once revealed */
-.js .camp.reveal.in:nth-child(odd)  { transform: rotate(-0.8deg); }
-.js .camp.reveal.in:nth-child(even) { transform: rotate(0.7deg); }
-.js .camp.reveal.in:hover           { transform: rotate(0) translateY(-5px); }
+.js .camp.reveal.in:nth-of-type(odd)  { transform: rotate(-0.8deg); }
+.js .camp.reveal.in:nth-of-type(even) { transform: rotate(0.7deg); }
+.js .camp.reveal.in:hover             { transform: rotate(0) translateY(-5px); }
 .js .pack.reveal.in:nth-child(1) { transform: rotate(-1deg); }
 .js .pack.reveal.in:nth-child(2) { transform: rotate(0.8deg) translateY(1.2rem); }
 .js .pack.reveal.in:nth-child(3) { transform: rotate(-0.6deg); }
@@ -678,12 +690,13 @@ section { padding: 4.5rem 0; }
 
   .expedition::before { left: 0.6rem; }
   .camp,
-  .camp:nth-child(even) {
+  .camp:nth-of-type(even) {
     width: auto;
     margin-left: 2.6rem;
   }
-  .camp:nth-child(odd) .tent,
-  .camp:nth-child(even) .tent { left: -3.1rem; right: auto; width: 1.9rem; height: 1.9rem; }
+  .camp:nth-of-type(odd) .tent,
+  .camp:nth-of-type(even) .tent { left: -3.1rem; right: auto; width: 1.9rem; height: 1.9rem; }
+  .camp-divider { align-self: flex-start; margin-left: 0.6rem; }
 
   .packs { grid-template-columns: 1fr; }
   .pack:nth-child(2) { transform: rotate(0.8deg); }
