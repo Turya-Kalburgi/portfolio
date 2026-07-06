@@ -14,6 +14,10 @@ python3 -m http.server 8741
 
 ## Deploy to GitHub Pages (free, custom URL)
 
+> Note: the repo name must match the GitHub username **including the hyphen**.
+> The old `turyakalburgi.github.io` repo (no hyphen) never served, because the
+> username is `Turya-Kalburgi`.
+
 1. Create a new repository on GitHub named exactly `Turya-Kalburgi.github.io`
    (public, empty — no README).
 2. From this folder, run:

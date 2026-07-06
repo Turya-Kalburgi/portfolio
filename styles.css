@@ -550,7 +550,7 @@ section { padding: 4.5rem 0; }
 /* ---------- Skills: the backpack ---------- */
 .packs {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 1.8rem;
   margin-top: 2.2rem;
   align-items: start;
@@ -565,6 +565,7 @@ section { padding: 4.5rem 0; }
 .pack:nth-child(1) { transform: rotate(-1deg); }
 .pack:nth-child(2) { transform: rotate(0.8deg) translateY(1.2rem); }
 .pack:nth-child(3) { transform: rotate(-0.6deg); }
+.pack:nth-child(4) { transform: rotate(0.9deg) translateY(0.7rem); }
 .pack:hover { transform: rotate(0) translateY(-4px); box-shadow: 8px 9px 0 var(--shadow); }
 
 .pack::before {
@@ -666,6 +667,7 @@ section { padding: 4.5rem 0; }
 .js .pack.reveal.in:nth-child(1) { transform: rotate(-1deg); }
 .js .pack.reveal.in:nth-child(2) { transform: rotate(0.8deg) translateY(1.2rem); }
 .js .pack.reveal.in:nth-child(3) { transform: rotate(-0.6deg); }
+.js .pack.reveal.in:nth-child(4) { transform: rotate(0.9deg) translateY(0.7rem); }
 .js .pack.reveal.in:hover        { transform: rotate(0) translateY(-4px); }
 
 /* ---------- Responsive ---------- */
